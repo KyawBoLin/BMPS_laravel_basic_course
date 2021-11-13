@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WebFrontend\customerController;
 use App\Http\Controllers\WebFrontend\aboutController;
 use App\Http\Controllers\WebFrontend\contactController;
 use App\Http\Controllers\WebFrontend\ProductController;
@@ -33,3 +34,5 @@ Route::get('about/{product_id}/shop/{shop_id}',[ProductController::class,'produc
 Route::get('promotions',[Controller::class,'showPromotions']);
 
 Route::post('api/postMethod',[Controller::class,'showPostMethod']);
+
+Route::post('api/customer',[customerController::class,'customerMethod']);

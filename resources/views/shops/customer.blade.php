@@ -1,6 +1,7 @@
 @extends('Layouts.master')
 
-@section('title','About Page')
+@section('title','Customer')
+
 @section('css')
 <style>
 
@@ -9,10 +10,10 @@
 
 @section('content')
 
-<h1>This is About Page</h1>
+<h4>This is customer page.</h4>
 
-<h5>Name is {{$name}}</h5>
-<h5>Age is {{$age}}</h5>
+<h4>{{$name}}</h4>
+<h4>{{$age}}</h4>
 
 @endsection
 
