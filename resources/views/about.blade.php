@@ -2,20 +2,19 @@
 
 @section('title','About Page')
 @section('css')
-<style>
-
-</style>
+    <link rel="stylesheet" href="{{ url('css/style.css')}}">
 @endsection
 
 @section('content')
 
-<h1>This is About Page</h1>
+<h1 class="font">This is About Page</h1>
 
-<h5>Name is {{$name}}</h5>
-<h5>Age is {{$age}}</h5>
+<img src="{{ url('images/programmer2.jpg')}}" class="imageSize">
+{{-- <h5>Name is {{$name}}</h5>
+<h5>Age is {{$age}}</h5> --}}
 
 @endsection
 
 @section('script')
-
+    <script src="{{ url('js/script.js')}}"></script>
 @endsection

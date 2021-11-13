@@ -23,13 +23,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('contact',[contactController::class,'contactPage'])->middleware('testMW');
+Route::get('contact',[contactController::class,'contactPage']);//->middleware('testMW');
 
 Route::get('about',[aboutController::class,'aboutPage']);
 
-Route::get('shop',[shopController::class,'shopPage']);
+Route::get('shop',[shopController::class,'shopPage'])->name('website.shop'); // link second way
 
-Route::get('about/{product_id}/shop/{shop_id}',[ProductController::class,'productPage']);
+Route::get('product',[ProductController::class,'productPage'])->name('website.product');
+
+Route::get('product/{productId}',[ProductController::class,'productId']);
 
 Route::get('promotions',[Controller::class,'showPromotions']);
 
