@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class aboutController extends Controller
 {
     function aboutPage(){
-        return view('about');
+        return view('practics.about');
     }
 }

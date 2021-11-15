@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -38,3 +40,8 @@ Route::get('promotions',[Controller::class,'showPromotions']);
 Route::post('api/postMethod',[Controller::class,'showPostMethod']);
 
 Route::post('api/customer',[customerController::class,'customerMethod']);
+
+
+// This is for web exercise
+
+Route::get('webExercise',[Controller::class,'homePage']);

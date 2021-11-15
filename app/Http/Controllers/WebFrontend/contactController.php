@@ -9,7 +9,7 @@ class contactController extends Controller
 {
     function contactPage(){
         $name = ["Kyaw","Bo","Lin"];
-        return view('contact',[
+        return view('practics.contact',[
             'current' => $name
         ]);
     }

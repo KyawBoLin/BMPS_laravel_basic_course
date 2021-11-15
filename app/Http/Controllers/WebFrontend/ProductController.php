@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     function productPage(){
         $arrayId = [1,2,3,4,5,6];
-        return view('product',[
+        return view('practics.product',[
             'productId' => $arrayId
         ]);
     }
