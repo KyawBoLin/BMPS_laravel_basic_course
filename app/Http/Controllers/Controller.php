@@ -24,4 +24,8 @@ class Controller extends BaseController
             'age' => $age
         ]);
     }
+
+    function homePage(){
+        return view('webExercise.index');
+    }
 }

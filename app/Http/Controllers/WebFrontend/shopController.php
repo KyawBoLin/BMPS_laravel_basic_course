@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class shopController extends Controller
 {
     function shopPage(){
-        return view('shops.shop');
+        return view('practics.shops.shop');
     }
 }
